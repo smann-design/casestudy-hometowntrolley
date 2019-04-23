@@ -1,0 +1,892 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ===================================================
+   Browser Upgrade Prompt
+=====================================================*/
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ===================================================
+   Author's custom styles
+=====================================================*/
+
+
+
+
+
+/****************************
+  GLOBAL STYLES
+*****************************/
+
+/**
+
+HOMETOWN TROLLEY COLOR PALETTE
+
+Black: #212121;
+
+Gold: #BD9655;
+
+Lt. Gold: #D9BF92;
+
+**/
+
+html{
+	box-sizing:border-box; 
+	background-color:#fff;
+	}
+
+*, *:before, *:after { 
+	box-sizing:inherit; 
+	}
+
+h1, h2, h3, h4, h5, p, a{
+	color:#212121;
+	margin:0;
+	}
+
+h1, h2, h3, .caption p{
+	font-family: "didoni-urw",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	}
+
+h4, h5, h6, p{
+	font-family: "neuzeit-grotesk",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	}
+
+h4, h5, a{	
+	text-transform:uppercase;
+	font-weight:700;
+	letter-spacing:.15em;
+	}
+
+p{
+	font-size:1.1em;
+	letter-spacing:.04em;
+	line-height:1.5em}
+
+
+h1{font-size:3.875em;}
+
+h2{font-size:4em; line-height:1.1em}
+
+h3{font-size:2.5em; line-height:1.1em}
+
+h4{font-size:1.4em;}
+
+h5{font-size:.72em;}
+
+h6{font-size:.6em;}
+
+a{text-decoration:none;}
+
+ul{list-style:none;}
+
+img{display:block;}
+
+.button-link h5{
+	display:inline-block;
+	border:2px solid #fff;
+	width:200px;
+	padding:1.1em 0;
+	margin-top:4em;
+	text-align:center;
+	font-size:.9em;
+	}
+
+
+
+/*==============================================
+================================================
+             DESKTOP
+================================================
+===============================================*/
+
+@media (min-width: 1200px){
+			
+
+/****************************
+  LANDING PAGE
+*****************************/
+	
+.two-column-section{
+	display:flex;
+	}
+	
+.two-column-section .col{
+	width:50%;
+	}
+	
+	
+/*** COL 1 ***/	
+	
+	
+h1 {
+	visibility:hidden;
+	}
+	
+.col-1-container{
+	position:relative;
+	background-image:url("../img/urban-trolley.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%;
+	height:0%;
+	padding-top:57%;
+	}
+	
+	
+.col-1-container .ht-logo{
+	width:22%;
+	position:absolute;
+	top:2em;
+	left:1.5em;
+	}
+	
+.col-1-container .image-overlay{
+	width:100%;
+	position:absolute;
+	top:10em;
+	right:-2.5em;
+	}
+	
+.col-1-container .image-overlay img{
+	width:100%;
+	}
+
+	
+/*** COL 2 ***/	
+
+.col-2-container{
+	position:relative;
+	}
+
+.col-2-container nav{
+	text-align:right;
+	margin:0 2em 0 0;
+	}
+	
+.col-2-container nav ul li{
+	display:inline-block;
+	margin:4em 0 0 1.7em;
+	font-size:1.1em;
+	}
+	
+.flush-left-copyblock{
+	margin:8em 0 0 7.5em;	
+	}
+	
+.flush-left-copyblock p{
+	padding:1.5em 15em 0 0;
+	line-height:1.7em;
+	}
+
+.flush-left-copyblock h5{
+	margin:0 0 .5em .25em;	
+	}
+	
+.laguna{
+	width:20%;
+	position:absolute;
+	top:51em;
+	right:2.5em;
+	z-index:200;	
+	}
+	
+.laguna img{
+	width:100%;
+	}
+	
+	
+	
+	
+/****************************
+  "HELP ME CHOOSE" SECTION
+*****************************/
+
+	
+.choose .billboard-content {
+	position:relative;
+	background-image:url("../img/gold-flag.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%;
+	height:0%;
+	padding-top:70%;
+	}
+	
+.choose .billboard-content img{
+	width:100%
+	}
+	
+.choose .billboard-text-overlay{
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:200;
+	text-align:center;
+	}
+	
+.choose .billboard-text-overlay h5, .choose .billboard-text-overlay h3, .choose .billboard-text-overlay p{
+	color:#fff;
+	}
+	
+.choose .billboard-text-overlay h5{
+	margin:1.5em 0;	
+	}
+
+.choose .billboard-text-overlay h3{
+	margin:0 5em 1em 5em;
+	line-height:1.4em;
+	}
+	
+.choose .billboard-content p{
+	font-size:1.3em;
+	}
+	
+.choose .frame{
+	width:370px;
+	height:550px;
+	border:22px solid #D9BF92;
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:100;
+	}
+	
+.choose .button-link h5{
+	margin-top:6em;
+	}
+	
+	
+	
+/****************************
+  "VIDEO PLAYER" SECTION
+*****************************/
+
+.video-player{
+	margin:7.5em 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+	
+.video-player img{
+	display:inline-block;
+	width:70%;
+	margin:0 1em;
+	}
+	
+.video-player h5{
+	font-size:.9em;
+	}
+	
+.video-player a{
+	text-align:center;
+	}
+	
+	
+	
+/****************************
+  "ADVENTURE" SECTION
+*****************************/
+
+.collage.adventure{
+	background-color:#eee;
+	position:relative;
+	padding:7em;
+	height:885px;
+	border-bottom:8px solid #eee;
+	}
+	
+.collage.adventure img{
+	width:50%;
+	display:block;
+	margin:0;
+	}
+	
+.collage-headline{
+	margin-right:43em;
+	}
+	
+.collage-images .passengers{
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding-left:1em;
+	}
+	
+.collage-images .carriage{
+	position:absolute;
+	top:38em;
+	left:0;
+	z-index:100;
+	padding-right:1em;
+	}
+	
+.collage.adventure h3{
+	font-size:3em;
+	}	
+	
+	
+	
+	
+/****************************
+  "ABOUT" SECTION
+*****************************/
+
+.about{
+	height:250px;
+	position:relative;
+	}
+
+.about-wrapper{
+	position:absolute;
+	z-index:400;
+	right:2em;
+	width:62%;
+	}
+	
+.about-text{
+	width:70%;
+	padding-right:10em;
+	padding-top:3em;
+	position:absolute;
+	left:295px;
+	}
+
+.about-text h4{
+	margin-bottom:.7em;
+	}
+	
+.about .button-link h5{
+	border:2px solid #ccc;
+	}
+	
+.about video{
+	display:inline-block;
+	position:absolute;
+	top:.5em;
+	}
+	
+#video{
+	object-fit:initial;
+	width:260px;
+	}
+	
+	
+	
+	
+/****************************
+  "FEATURES" SECTION
+*****************************/
+
+.billboard.features{
+	padding:19em 26em 21em 26em;
+	position:relative;
+	}	
+	
+.caption{
+	text-align:center;	
+	}
+	
+.caption p{
+	font-size:1.3em;
+	}
+	
+.billboard.features img{
+	position:absolute;
+	top:8em;
+	right:0em;
+	}
+	
+	
+	
+	
+/****************************
+  "MAP" SECTION
+*****************************/
+			
+
+.billboard.miles-logged{
+	background-image:url("../img/map-bg.jpg");
+	background-size:130%;
+	background-repeat:no-repeat;
+	width:100%;
+	height:0%;
+	padding-top:97%;
+	position:relative;
+	z-index:-200;
+	}
+	
+.miles-headline{
+	position:absolute;
+	top:10em;
+	left:7em;
+	z-index:100;
+	}
+	
+.miles-headline h5, .miles-headline h3, .miles-headline p{
+	color:#fff;
+	}
+
+.miles-headline h3{
+	font-size:4em;
+	margin-top:.5em;
+	}
+	
+.miles-headline h5{
+	color:#fff;
+	}	
+
+.miles-headline p{
+	font-size:1.3em;
+	margin-top:.7em;
+	}
+	
+.miles-counter{
+	color:#BD9655;
+	background-color:#fff;
+	padding:0 .25em;
+	}
+	
+.map{
+	width:57%;
+	height:57%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-37%);
+	}
+	
+	
+	
+	
+/****************************
+  "GET A QUOTE" SECTION
+*****************************/
+			
+		
+.billboard.get-quote{
+	background-image:url("../img/wood-texture.jpg");
+	background-size:120%;
+	background-repeat:no-repeat;
+	width:100%;
+	height:0;
+	padding-top:90.5%;
+	position:relative;
+	z-index:-200;
+	}
+	
+.billboard-image-overlay{
+	position:absolute;
+	bottom:0;
+	z-index:300;
+	}
+	
+.billboard-image-overlay img{
+	width:100%;
+	}	
+
+.get-quote .billboard-text-overlay{
+	position:absolute;
+	top:35%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:200;
+	text-align:center;
+	width:100%;
+	}
+	
+.get-quote .billboard-text-overlay h5, .get-quote .billboard-text-overlay h3, .get-quote .billboard-text-overlay p{
+	color:#fff;
+	}
+	
+.get-quote .billboard-text-overlay h5{
+	margin:1.5em 0;	
+	font-size:1.7em;
+	color:#BD9655;
+	}
+
+.get-quote .billboard-text-overlay h3{
+	font-size:10em;
+	}
+	
+.get-quote .billboard-content p{
+	font-size:1.15em;
+	}
+	
+.get-quote .frame{
+	width:780px;
+	height:900px;
+	border:18px solid #BD9655;
+	position:absolute;
+	top:47%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:50;
+	}
+	
+.get-quote .button-link h5{
+	display:inline-block;
+	border:2px solid #BD9655;
+	background-color:#BD9655;
+	width:440px;
+	padding:1em 0;
+	margin-top:3em;
+	text-align:center;
+	font-size:1.5em;
+	color:#fff;
+	}
+	
+	
+	
+	
+	
+/****************************
+  FOOTER SECTION
+*****************************/
+	
+footer{
+	display:flex;
+	padding:0 7em;
+	margin:145px 0 0 0;
+	}
+
+footer h5{	
+	font-size:.85em;
+	margin-top:1em;
+	margin-bottom:.5em;
+	}
+
+footer p{	
+	font-size:1em;
+	line-height:2em;
+	color:#888;
+	}
+.col-2{	
+	width:60%;
+	text-align:center;
+	}
+
+.col-2 img{	
+	display:block;
+	margin:0 auto 3em auto;
+	}
+
+p.copyright {
+	color:#212121;
+	font-size:.9em;
+	}
+	
+.col-3{	
+	text-align:right;
+	}
+
+.footer-nav ul{	
+	padding:0;
+	}
+
+.footer-nav ul li{
+	display:inline-block;
+	margin:0 .9em;
+	}
+
+.social-nav ul li{	
+	display:inline;
+	margin-left:.4em;
+	}
+
+.social-nav img{	
+	display:inline;
+	width:13%;
+	margin-top:.8em;
+	}
+
+footer ul{
+	margin:0 0 3.5em 0;
+	}	
+
+.col-1, .col-3{
+	width:20%;	
+	}
+	
+
+} /*end of desktop media query*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
